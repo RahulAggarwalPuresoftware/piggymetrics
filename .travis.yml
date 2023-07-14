@@ -45,7 +45,7 @@ after_success:
   - docker tag $AUTH_SERVICE:$COMMIT $AUTH_SERVICE:$TAG
   - docker push $AUTH_SERVICE
 
-  # ACCOUNT SERVICE
+  # ACCOUNT SERVIC
   - export ACCOUNT_SERVICE=sqshq/piggymetrics-account-service
   - docker build -t $ACCOUNT_SERVICE:$COMMIT ./account-service
   - docker tag $ACCOUNT_SERVICE:$COMMIT $ACCOUNT_SERVICE:$TAG
